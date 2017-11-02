@@ -1,7 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./app/style/vars.scss";
 
-$main-brand-colour :"#4196ea";
-$main-background-colour:rgb(41, 41, 41);
+html, body{
+    margin: 0px;
+    padding: 0px;
+    height: 99%;
+    width: 100%;
+    background-color: $main-background-colour;
+}
 
-$main-header-font : 'Pacifico', cursive;
+*{
+    color: $main-font-colour;
+    font-family: $main-font-family;
+}

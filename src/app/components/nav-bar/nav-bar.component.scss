@@ -1,0 +1,53 @@
+@import "../../style/vars.scss";
+
+
+
+.main-nav-container{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .main-brand-container{
+        margin-right: 20px;
+        cursor: pointer;
+        h1{
+            color: $main-brand-colour;
+            font-family: $main-header-font;
+            font-size: 30px;
+        }
+        h1:hover{
+            color: $hover-link-colour;
+        }
+    }
+    .nav-links{
+        padding-top: 23px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        li {
+            float: left;
+            margin-right: 20px;
+            font-size: 22px;
+        }
+        
+        li a {
+            display: block;
+            color: $main-link-colour;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            color: $hover-link-colour;
+        }
+
+    }
+}

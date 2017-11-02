@@ -1,0 +1,15 @@
+
+.landing-container {
+    display: flex;
+
+    .main-landing-container{
+        width: 70%;
+        min-height: 85vh;
+
+    }
+    .info-feed{
+        width: 30%;
+        min-height: 85vh;
+        
+    }
+}

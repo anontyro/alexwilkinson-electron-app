@@ -9,6 +9,8 @@ import { LoginViewComponent } from './components/login-view/index';
 import { LandingViewComponent } from './components/landing-view/index';
 import { BlogViewComponent } from './components/blog-view/index';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { LandingMainComponent } from './components/landing-view/landing-main/landing-main.component';
+import { LandingInfoFeedComponent } from './components/landing-view/landing-info-feed/landing-info-feed.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     LoginViewComponent,
     LandingViewComponent,
     BlogViewComponent,
-    NavBarComponent
+    NavBarComponent,
+    LandingMainComponent,
+    LandingInfoFeedComponent
   ],
   imports: [
     RouterModule.forRoot(AppRoutes),
