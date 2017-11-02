@@ -11,6 +11,12 @@ import { BlogViewComponent } from './components/blog-view/index';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { LandingMainComponent } from './components/landing-view/landing-main/landing-main.component';
 import { LandingInfoFeedComponent } from './components/landing-view/landing-info-feed/landing-info-feed.component';
+import { BlogCreateViewComponent } from './components/blog-view/blog-create-view/blog-create-view.component';
+
+import {
+  MatButtonModule,
+  MatIconModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -20,12 +26,15 @@ import { LandingInfoFeedComponent } from './components/landing-view/landing-info
     BlogViewComponent,
     NavBarComponent,
     LandingMainComponent,
-    LandingInfoFeedComponent
+    LandingInfoFeedComponent,
+    BlogCreateViewComponent
   ],
   imports: [
     RouterModule.forRoot(AppRoutes),
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
