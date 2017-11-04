@@ -1,0 +1,10 @@
+.create-view-container{
+    display: flex;
+    flex-direction: row;
+    .blog-form{
+        width: 50%;
+    }
+    .blog-preview{
+        width: 50%;
+    }
+}

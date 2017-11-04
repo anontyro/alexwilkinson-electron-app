@@ -7,16 +7,21 @@ import {AppRoutes} from './app.routes';
 import { AppComponent } from './app.component';
 import { LoginViewComponent } from './components/login-view/index';
 import { LandingViewComponent } from './components/landing-view/index';
-import { BlogViewComponent } from './components/blog-view/index';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { LandingMainComponent } from './components/landing-view/landing-main/landing-main.component';
 import { LandingInfoFeedComponent } from './components/landing-view/landing-info-feed/landing-info-feed.component';
-import { BlogCreateViewComponent } from './components/blog-view/blog-create-view/blog-create-view.component';
+import { 
+  BlogCreateViewComponent,
+  BlogCreateFormComponent,
+  BlogViewComponent,
+  BlogCreatePreviewComponent 
+} from './components/blog-view/index';
 
 import {
   MatButtonModule,
   MatIconModule
 } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +32,9 @@ import {
     NavBarComponent,
     LandingMainComponent,
     LandingInfoFeedComponent,
-    BlogCreateViewComponent
+    BlogCreateViewComponent,
+    BlogCreateFormComponent,
+    BlogCreatePreviewComponent
   ],
   imports: [
     RouterModule.forRoot(AppRoutes),
