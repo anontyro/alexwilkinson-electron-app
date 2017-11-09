@@ -1,5 +1,6 @@
 import { BlogModel } from './../../../../models/BlogModel';
 import { Component, OnInit, Input } from '@angular/core';
+import { DateAdapter, NativeDateAdapter } from '@angular/material';
 
 @Component({
   selector: 'app-blog-create-form',
@@ -9,7 +10,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class BlogCreateFormComponent implements OnInit {
   @Input()
   public newBlogPost: BlogModel;
-  constructor() { }
+  constructor(
+    private dateAdapter: DateAdapter<NativeDateAdapter>
+  ) { }
 
   ngOnInit() {
   }

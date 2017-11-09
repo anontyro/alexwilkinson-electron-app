@@ -1,0 +1,34 @@
+.blog-create-container{
+    padding-top: 22px;
+}
+.blog-title-input{
+    width: 100%;
+}
+.blog-controls{
+    display: flex;
+    flex-direction: row;
+    .draft{
+        margin-left: 10px;
+        width: 50%;
+        padding-top: 20px;
+        .draft-checkbox{
+            float: right;
+        }
+    }
+}
+.image-selector{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .image-btn{
+        width: 50%;
+    }
+    .image-txt{
+        width: 50%;
+        text-align: right;
+        line-height: 0.6;
+        .selected-image-text{
+            width:100%;
+        }
+    }
+}

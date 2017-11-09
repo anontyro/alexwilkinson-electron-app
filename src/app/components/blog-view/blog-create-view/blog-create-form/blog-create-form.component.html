@@ -1,5 +1,33 @@
 <div class="blog-create-container">
-  <div class="blog-body-input">
-    <textarea name="blog-body" id="blog-body" cols="30" rows="10" [(ngModel)]="newBlogPost.body"></textarea>
+
+  <div class="blog-header">
+    <mat-form-field class="blog-title-input">
+      <input matInput placeholder="Title" [(ngModel)]="newBlogPost.title">
+    </mat-form-field>
   </div>
+  <div class="blog-controls">
+    <div class="publish-date">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="newBlogPost.publishDate" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="draft">
+      <mat-checkbox class="draft-checkbox" [(ngModel)]="newBlogPost.draft">
+        Draft
+      </mat-checkbox>
+    </div>
+
+  </div>
+  <div class="image-selector">
+	  <div class="image-btn">
+			<button mat-raised-button color="primary">Select Image</button>			
+	  </div>
+	  <div class="image-txt">
+			<p class="selected-image-txt">Image.png....</p>			
+	  </div>
+  </div>
+  <app-blog-create-form-body [(blogText)]="newBlogPost"></app-blog-create-form-body>
+
 </div>

@@ -22,8 +22,21 @@ import {
 
 import {
   MatButtonModule,
-  MatIconModule
+  MatIconModule,
+  MatDatepickerModule,
+  MatFormFieldModule,
+  MatSelectModule,
+  MatInputModule,
+  MatExpansionModule,
+  MatSlideToggleModule,
+  MatSnackBarModule,
+  MatDialogModule,
+  NativeDateAdapter,
+  MatCheckboxModule,
+  MatNativeDateModule,
+  MatProgressBarModule,
 } from '@angular/material';
+import { BlogCreateFormBodyComponent } from './components/blog-view/blog-create-view/blog-create-form/blog-create-form-body/blog-create-form-body.component';
 
 
 @NgModule({
@@ -37,7 +50,8 @@ import {
     LandingInfoFeedComponent,
     BlogCreateViewComponent,
     BlogCreateFormComponent,
-    BlogCreatePreviewComponent
+    BlogCreatePreviewComponent,
+    BlogCreateFormBodyComponent
   ],
   imports: [
     RouterModule.forRoot(AppRoutes),
@@ -45,8 +59,19 @@ import {
     BrowserAnimationsModule,
     FormsModule,
     MatButtonModule,
+    MatDialogModule,
+    MatProgressBarModule,
+    MatNativeDateModule,
+    MatSnackBarModule,
     MatIconModule,
-    MarkdownToHtmlModule
+    MatDatepickerModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    MarkdownToHtmlModule,
+    MatCheckboxModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

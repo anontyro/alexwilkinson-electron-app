@@ -1,3 +1,11 @@
-<div class="blog-body-preview" *ngIf="newBlogPost.body" [innerHTML]="newBlogPost.body|MarkdownToHtml">
-
+<div class="blog-preview-container">
+    <div class="blog-header-preview">
+        <div class="blog-title-preview">
+              <h1>{{newBlogPost.title}}</h1>
+        </div>
+    </div>
+    
+    <div class="blog-body-preview" *ngIf="newBlogPost.body" [innerHTML]="newBlogPost.body|MarkdownToHtml">
+    
+    </div>
 </div>
