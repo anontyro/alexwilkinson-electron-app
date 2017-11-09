@@ -12,6 +12,7 @@ export class BlogCreateViewComponent implements OnInit {
   public newBlogPost: BlogModel = {
     publishDate: moment().toDate(),
     draft: true,
+    coverImage: "default.jpg"
   };
 
   constructor() { }

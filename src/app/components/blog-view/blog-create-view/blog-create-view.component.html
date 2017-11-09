@@ -1,8 +1,8 @@
 <div class="create-view-container">
   <div class="blog-form">
-    <app-blog-create-form></app-blog-create-form>
+    <app-blog-create-form [(newBlogPost)]="newBlogPost"></app-blog-create-form>
   </div>
   <div class="blog-preview">
-    <app-blog-create-preview></app-blog-create-preview>
+    <app-blog-create-preview [newBlogPost]="newBlogPost"></app-blog-create-preview>
   </div>
 </div>
