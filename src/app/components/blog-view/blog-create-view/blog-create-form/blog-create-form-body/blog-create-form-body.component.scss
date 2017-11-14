@@ -1,4 +1,17 @@
-.blog-body{
-    width: 100%;
-    height: 50vh;
+.blog-body-input{
+    .blog-input-controls{
+        width: 100%;
+        margin: auto;
+        height: 50px;
+        border: 1px solid rgb(102, 98, 98) ;
+        background: {
+            color: white;
+        }
+    }
+    .blog-body{
+        width: 100%;
+        height: 50vh;
+    }
 }
+
+
