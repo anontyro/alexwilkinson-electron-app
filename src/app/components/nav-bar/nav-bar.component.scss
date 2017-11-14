@@ -1,6 +1,8 @@
 @import "../../style/vars.scss";
 
 .main-nav-container{
+    width: 70%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     // padding-left: 20px;

@@ -1,11 +1,24 @@
 <div class="blog-preview-container">
     <div class="blog-header-preview">
-        <div class="blog-title-preview">
-              <h1>{{newBlogPost.title}}</h1>
+        <div class="blog-title-preview" 
+        [ngStyle]="{'background-image' : 'url(./../../../../../assets/images/blog/cover-image/'+newBlogPost.coverImage+')'}">
+            <div class="blog-title-top">
+                <h3 class="blog-h-published">Published: {{newBlogPost.publishDate | date:'MMM dd yyyy' }}</h3>
+                <h3 class="blog-h-by">By: {{newBlogPost.author}} </h3>
+            </div>    
+            <div class="blog-title-header">
+                <h1 class="blog-h-title">{{newBlogPost.title}}</h1>                
+            </div>      
         </div>
     </div>
     
-    <div class="blog-body-preview" *ngIf="newBlogPost.body" [innerHTML]="newBlogPost.body|MarkdownToHtml">
-    
+    <div class="blog-body-preview" >
+        <p class="preview-markdown" *ngIf="newBlogPost.body" [innerHTML]="newBlogPost.body|MarkdownToHtml">
+
+        </p>
+    </div>
+    <hr class="hr-style">
+    <div class="blog-preview-last-edited">
+        <p class="last-edited-text">Last edited: {{newBlogPost.lastEdited}}</p>            
     </div>
 </div>

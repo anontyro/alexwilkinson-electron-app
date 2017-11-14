@@ -1,10 +1,67 @@
 .blog-preview-container{
     width: 100%;
-    height: 80%;
-    padding: 10px;
+    min-height: 80%;
+    padding: 0px;
     position: relative;
+    border-radius: 1%;
+    background: {
+        color: white;
+    }
     .blog-header-preview{
         width: 100%;
-        height: 150px;
+        height: 200px;
+        position: relative;
+        .blog-title-preview{
+            position: relative;
+            height: 200px;
+            width: 100%;
+            .blog-title-header{
+                position: absolute;
+                bottom: 0;
+                left: 10px;
+                h1.blog-h-title{
+                    font-family: 'Bangers';
+                    font-size: 40px;
+                    color: white;
+                    text-shadow: 2px 2px black;
+                    margin: 10px;
+                }
+            }
+            .blog-title-top{
+                position: absolute;
+                top: 0;
+                right: 10px;
+                h3.blog-h-published, h3.blog-h-by{
+                    color: white;
+                    text-align: right;
+                    text-shadow: 2px 2px black;
+                }
+            }
+        }
+    }
+    .blog-body-preview{
+        min-height: 500px;
+        width: 100%;
+        padding: 10px;
+        .preview-markdown{
+            width: 95%;
+        }
+    }
+    .blog-body-preview-last-edited{
+        padding: 10px;
+
+
+    }
+    .hr-style{
+        margin: 10px;        
+        border: 0;
+        border-top: 1px solid #eee;
+    }
+    .blog-preview-last-edited{
+        padding-bottom: 5px;
+        padding-right: 10px;
+        .last-edited-text{
+            text-align: right;
+        }
     }
 }

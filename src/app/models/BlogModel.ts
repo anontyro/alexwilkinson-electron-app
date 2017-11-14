@@ -6,4 +6,5 @@ export class BlogModel{
     public coverImage?: string;
     public body?: string;
     public author?: string;
+    public lastEdited?:Date;
 }

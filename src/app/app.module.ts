@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import {AppRoutes} from './app.routes';
+import { DatePipe } from '@angular/common';
 
 import {MarkdownToHtmlModule} from 'markdown-to-html-pipe';
 
@@ -71,7 +72,8 @@ import { BlogCreateFormBodyComponent } from './components/blog-view/blog-create-
     MatInputModule,
     MarkdownToHtmlModule,
     MatCheckboxModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
