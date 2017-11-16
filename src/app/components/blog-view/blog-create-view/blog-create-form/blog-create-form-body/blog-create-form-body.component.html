@@ -1,6 +1,6 @@
 <div class="blog-body-input">
     <div class="blog-input-controls">
-        
+        <button (click)="getSelection('**','**')">bold</button>
     </div>
     <mat-form-field class="blog-body">
         <textarea matInput placeholder="Body" name="blog-body" id="blog-body" cols="30" rows="25" [(ngModel)]="blogText.body"></textarea>
