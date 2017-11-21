@@ -29,5 +29,9 @@
 	  </div>
   </div>
   <app-blog-create-form-body [(blogText)]="newBlogPost"></app-blog-create-form-body>
-
+  <div class="new-post-controls">
+    <div class="save-btn">
+			<button mat-raised-button color="primary"(click)="saveBtn()">Save Post</button>			
+	  </div>
+  </div>
 </div>
