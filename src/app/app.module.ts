@@ -38,6 +38,7 @@ import {
   MatProgressBarModule,
 } from '@angular/material';
 import { BlogCreateFormBodyComponent } from './components/blog-view/blog-create-view/blog-create-form/blog-create-form-body/blog-create-form-body.component';
+import { IoServiceService } from './services/index';
 
 
 @NgModule({
@@ -75,7 +76,9 @@ import { BlogCreateFormBodyComponent } from './components/blog-view/blog-create-
     MatSlideToggleModule,
     
   ],
-  providers: [],
+  providers: [
+    IoServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
